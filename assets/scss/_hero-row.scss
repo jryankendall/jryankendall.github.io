@@ -1,0 +1,16 @@
+.hero-banner-column {
+    @extend .grey;
+    margin: 8px 0;
+}
+
+.about-box-header {
+    @extend .grey, .lighten-1;
+}
+
+.about-box-body {
+    @extend .grey, .lighten-2;
+}
+
+.hero-box-img-container {
+    margin: 8px 0;
+}
