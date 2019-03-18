@@ -1,0 +1,16 @@
+.profile-area-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    @include for-tablet-landscape-up {
+        flex-flow: row;
+    }
+}
+
+.profile-area-card {
+    max-width: 99%;
+
+    @include for-tablet-landscape-up {
+        max-width: 30%;
+    }
+}
