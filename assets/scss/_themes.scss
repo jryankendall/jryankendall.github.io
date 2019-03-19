@@ -1,0 +1,7 @@
+$theme-primary: color("blue", "lighten-4");
+
+$theme-secondary: color("indigo", "darken-1");
+
+.page-content-container {
+    @extend .grey, .lighten-3;
+}

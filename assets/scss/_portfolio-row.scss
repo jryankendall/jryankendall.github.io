@@ -1,0 +1,26 @@
+.portfolio-area-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+}
+
+.portfolio-card-image-div {
+    height: auto;
+}
+
+.portfolio-card-img {
+    max-width: 450px;
+    height: auto;
+}
+
+.expand-down-btn {
+    @extend .blue, .white-text;
+    border-radius: 50%;
+}
