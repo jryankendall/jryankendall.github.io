@@ -1,6 +1,7 @@
 .hero-banner-column {
-    @extend .grey;
+    background-color: $color-secondary;
     margin: 8px 0;
+    padding: 0;
 }
 
 .about-box-header {
@@ -8,7 +9,13 @@
 }
 
 .about-box-body {
-    @extend .grey, .lighten-2;
+    background-color: $color-accent;
+    padding: 0;
+    border-radius: 2.5%;
+
+    @include for-tablet-landscape-up {
+        padding: 2.5%;
+    }
 }
 
 .hero-box-img-container {

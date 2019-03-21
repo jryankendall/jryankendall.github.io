@@ -1,7 +1,16 @@
-$theme-primary: color("blue", "lighten-4");
+$vibrant-colors : (
+    'primary' : #a8d1e7,
+    'secondary' : #354883,
+    'tertiary' : #24315e,
+    'quaternary' : #f76d6d,
+    'accent' : #f7e9a0
+);
 
-$theme-secondary: color("indigo", "darken-1");
 
-.page-content-container {
-    @extend .grey, .lighten-3;
-}
+$color-scheme : $vibrant-colors;
+
+$color-primary : map-get($color-scheme, 'primary');
+$color-secondary : map-get($color-scheme, 'secondary');
+$color-tertiary : map-get($color-scheme, 'tertiary');
+$color-quaternary : map-get($color-scheme, 'quaternary');
+$color-accent : map-get($color-scheme, 'accent');
