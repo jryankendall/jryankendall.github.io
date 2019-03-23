@@ -1,5 +1,8 @@
 .page-content-container {
     background-color: $color-primary;
+    margin-bottom: 0;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
 }
 
 .topnav-div {
@@ -8,4 +11,25 @@
 
 body {
     background-color: $color-tertiary;
+}
+
+
+.content-container {
+    border-radius: 1%;
+    margin-top: 10px;
+}
+
+
+.section-head {
+    margin-left: 8px;
+}
+
+.footer {
+    background-color: red;
+    height: 60px;
+    width: 100%;
+}
+
+.very-bottom-row {
+    margin-bottom: 0;
 }

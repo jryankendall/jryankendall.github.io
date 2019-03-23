@@ -36,7 +36,7 @@
     
     <div class="container page-content-container">
         <div class="row">
-            <div class="col s12 hero-banner-column">
+            <div class="col s12 hero-banner-column content-container z-depth-1">
                 <div class="row">
                     <div class="col s12 l4">
                         <div class="about-box-header" id="intro">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="row">
-            <div class="col s12 profile-area-box" id="profile">
+            <div class="col s12 profile-area-box content-container" id="profile">
                 <div class="card profile-area-card white-text">
                     <div class="card-content">
                         <span class="card-title">HTML, CSS</span>
@@ -100,16 +100,17 @@
         </div>
 
         <div class="row">
-            <div class="col s12 portfolio-area-box" id="portfolio">
+            <div class="col s12 portfolio-area-box content-container" id="portfolio">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="#portfolio" class="brand-logo left"> <i class="material-icons">folder</i>Projects</a>
+                        <a href="#portfolio" class="brand-logo left section-head"> <i class="material-icons">folder</i>Projects</a>
                         <ul class="right">
                             <li><a href="https://github.com/jryankendall" target="_blank">My Github</a></li>
 
                         </ul>
                     </div>
                 </nav>
+
                 <div class="card portfolio-card">
                     <div class="card-image portfolio-card-image-div">
                         <img class="portfolio-card-img" src="assets/images/placeholder_sq_450.jpg" alt="Project 1">
@@ -127,6 +128,7 @@
                         <a class="btn waves-effect" target="_blank" href="https://jryankendall.github.io/ThePantryChef/">Demo Page</a>
                     </div>
                 </div>
+
                 <div class="card portfolio-card">
                     <div class="card-image portfolio-card-image-div">
                         <img src="assets/images/placeholder_sq_450.jpg" alt="Project 1">
@@ -145,19 +147,112 @@
         </div>
 
         <div class="row">
-            <div class="col s12 contact-area-box" id="contactme">
+            <div class="col s12" id="other">
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="#contactme" class="brand-logo left"> <i class="material-icons">contact_mail</i>Contact Me</a>
+                        <a href="#other" class="brand-logo left section-head"> <i class="material-icons">find_in_page</i>Find Me</a>
                         
                     </div>
                 </nav>
+
+                <div class="row">
+                    <div class="col s12 content-container findme-box z-depth-1">
+                        <div class="col s12 m10 offset-m1 l6">
+                            <div class="card horizontal find-card">
+                                <div class="card-image">
+                                    <img class="image-find" src="assets/images/placeholder_sq_250.jpg" alt="LinkedIn">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Maybe an image of some people shaking hands here.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">My LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m10 offset-m1 l6">
+                            <div class="card horizontal find-card">
+                                <div class="card-image">
+                                    <img class="image-find" src="assets/images/placeholder_sq_250.jpg" alt="Github">
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>GitHub logo on left, some stock code image here.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">My Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12" id="contactme">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#contactme" class="brand-logo left section-head"> <i class="material-icons">contact_mail</i>Contact Me</a>
+                        
+                    </div>
+                </nav>
+
+                <div class="row very-bottom-row">
+                    <div class="col s12 contact-area-box content-container z-depth-1">
+                        <form class="row" id="contact-form">
+                            <div class="input-field col s2 l2 form-box">
+                                <select>
+                                    <option value="1">Miss</option>
+                                    <option value="2">Ms.</option>
+                                    <option value="3">Mrs.</option>
+                                    <option value="4">Mr.</option>
+                                    <option value="5" selected>-</option>
+                                </select>
+                                <label>Title</label>
+                            </div>
+                            <div class="input-field col s10 l4 form-box">
+                                <input id="input_firstname" type="text" class="validate" required>
+                                <label for="input_firstname">First Name</label>
+                            </div>
+                            <div class="input-field col s12 l6 form-box">
+                                <input type="text" id="input_lastname" class="validate" required>
+                                <label for="input_lastname">Last Name</label>
+                            </div>
+
+                            <div class="input-field col s4 form-box">
+                                <input type="email" id="input_email" class="validate" required>
+                                <label for="input_email">Your Email</label>
+                            </div>
+
+                            <div class="input-field col s8 form-box">
+                                <input type="text" id="input_subject" class="validate" required>
+                                <label for="input_subject">Subject</label>
+                            </div>
+
+                            <div class="input-field col s12 form-box">
+                                <textarea id="input_body" class="materialize-textarea" required></textarea>
+                                <label for=input_body>Your Message</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect waves-light btn-large" type="submit" name="submit_action">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
             </div>
         </div>
 
     </div>
 
+   <!--  <div class="footer">
+
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="assets/javascript/materialize.js"></script>

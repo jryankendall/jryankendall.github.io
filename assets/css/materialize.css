@@ -8097,6 +8097,9 @@ body {
 
 .page-content-container {
   background-color: #a8d1e7;
+  margin-bottom: 0;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
 }
 
 .topnav-div {
@@ -8107,16 +8110,39 @@ body {
   background-color: #24315e;
 }
 
+.content-container {
+  border-radius: 1%;
+  margin-top: 10px;
+}
+
+.section-head {
+  margin-left: 8px;
+}
+
+.footer {
+  background-color: red;
+  height: 60px;
+  width: 100%;
+}
+
+.very-bottom-row {
+  margin-bottom: 0;
+}
+
 .hero-banner-column {
   background-color: #354883;
   margin: 8px 0;
   padding: 0;
 }
 
+.about-box-header {
+  border-radius: 2%;
+}
+
 .about-box-body {
   background-color: #f7e9a0;
   padding: 0;
-  border-radius: 2.5%;
+  border-radius: 1%;
 }
 @media (min-width: 993px) {
   .about-box-body {
@@ -8173,6 +8199,30 @@ body {
 
 .expand-down-btn {
   border-radius: 50%;
+}
+
+.contact-area-box {
+  background-color: #354883;
+}
+
+#contact-form {
+  background-color: #efefef;
+  margin: 10px 4px;
+  border-radius: 0.5%;
+}
+
+.form-box {
+  background-color: #efefef;
+  border: solid 1px #efefef;
+}
+
+.findme-box {
+  background-color: #354883;
+}
+
+.image-find {
+  height: 250px;
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=materialize.css.map */
