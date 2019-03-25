@@ -8111,7 +8111,7 @@ body {
 }
 
 .content-container {
-  border-radius: 1%;
+  border-radius: 0.5%;
   margin-top: 10px;
 }
 
@@ -8201,6 +8201,11 @@ body {
   border-radius: 50%;
 }
 
+.project-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .contact-area-box {
   background-color: #354883;
 }
@@ -8223,6 +8228,16 @@ body {
 .image-find {
   height: 250px;
   max-width: 250px;
+  border-right: solid 1px #eeeeee;
+}
+
+.find-card {
+  max-height: 250px;
+}
+
+.card-image {
+  width: fit-content;
+  height: fit-content;
 }
 
 /*# sourceMappingURL=materialize.css.map */

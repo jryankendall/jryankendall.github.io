@@ -20,4 +20,14 @@
 .image-find {
     height: 250px;
     max-width: 250px;
+    border-right: solid 1px #eeeeee;
+}
+
+.find-card {
+    max-height: 250px;
+}
+
+.card-image {
+    width: fit-content;
+    height: fit-content;
 }
