@@ -5,7 +5,7 @@
 }
 
 .about-box-header {
-    @extend .grey, .lighten-1;
+    background-color: $color-primary;
     border-radius: 2%;
 }
 
@@ -21,4 +21,19 @@
 
 .hero-box-img-container {
     margin: 8px 0;
+    position: relative;
+}
+
+.hero-box-img-container > img {
+    position: relative;
+}
+
+.hero-box-img-container > a {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    @include for-tablet-landscape-up {
+        right: 40px;
+    }
+    
 }
