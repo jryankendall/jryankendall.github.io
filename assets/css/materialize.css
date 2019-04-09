@@ -8262,4 +8262,8 @@ body {
   height: fit-content;
 }
 
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=materialize.css.map */

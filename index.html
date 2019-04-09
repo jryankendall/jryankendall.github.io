@@ -350,20 +350,34 @@
 
           <div class="row very-bottom-row">
             <div class="col s12 contact-area-box content-container z-depth-1">
-              <form class="row" id="contact-form">
+              <form
+                name="contactform"
+                class="row"
+                id="contact-form"
+                netlify-honeypot="unreal-name"
+                data-netlify="true"
+                action="./formsent.html"
+              >
                 <div class="input-field col s2 l2 form-box">
-                  <select>
+                  <select id="nametitle" name="title">
                     <option value="1">Miss</option>
                     <option value="2">Ms.</option>
                     <option value="3">Mrs.</option>
                     <option value="4">Mr.</option>
                     <option value="5" selected>-</option>
                   </select>
-                  <label>Title</label>
+                  <label for="nametitle">Title</label>
                 </div>
+                <p class="hidden">
+                  <label
+                    >Don’t fill this out if you're human:
+                    <input name="unreal-name"
+                  /></label>
+                </p>
                 <div class="input-field col s10 l4 form-box">
                   <input
                     id="input_firstname"
+                    name="firstname"
                     type="text"
                     class="validate"
                     required
@@ -374,6 +388,7 @@
                   <input
                     type="text"
                     id="input_lastname"
+                    name="lastname"
                     class="validate"
                     required
                   />
@@ -383,6 +398,7 @@
                 <div class="input-field col s4 form-box">
                   <input
                     type="email"
+                    name="email"
                     id="input_email"
                     class="validate"
                     required
@@ -394,6 +410,7 @@
                   <input
                     type="text"
                     id="input_subject"
+                    name="subject"
                     class="validate"
                     required
                   />
@@ -404,24 +421,23 @@
                   <textarea
                     id="input_body"
                     class="materialize-textarea"
+                    name="message"
+                    maxlength="300"
                     required
                   ></textarea>
-                  <label for="input_body">Your Message</label>
+                  <label for="input_body">Your Message (Max 300 chars)</label>
                 </div>
                 <div class="input-field col s12">
                   <button
                     class="btn waves-effect waves-light btn-large"
                     type="submit"
                     name="submit_action"
+                    id="submit-contact"
                   >
                     Send
                   </button>
                 </div>
-                <p>
-                  Sending will do nothing as of now; if you wish to contact me,
-                  please contact me directly through one of the means I give
-                  above. Thanks!
-                </p>
+                <p id="form-submit-message"></p>
               </form>
             </div>
           </div>
